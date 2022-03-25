@@ -1,0 +1,6 @@
+#Estas son la variables de entorno
+.env
+#Estos son las dependencias de node
+node_modules
+#Esta es el Build folder o carpeta construida del proyecto en producción
+dist

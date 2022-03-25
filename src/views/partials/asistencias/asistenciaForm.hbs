@@ -1,0 +1,60 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+
+  <h3>Agrega la asistencia</h3>
+  <form action="/asistencia/add" method="POST">
+
+    <div><label for="title">Asistencia</label></div>
+
+    <div class="mb-2">
+      <div class="mb-1">
+        <input
+        type="text"
+        class="form-control rounded-0 bg-dark text-white"
+        name="codigo"
+        placeholder="Codigo"
+        id="codigo"
+      />
+      </div>
+      <div class="mb-1">
+        <input
+        type="text"
+        class="form-control rounded-0 bg-dark text-white"
+        name="cedula"
+        placeholder="Cédula"
+        id="cedula"
+      />
+      </div>
+      <div class="mb-1">
+        <input
+        type="text"
+        class="form-control rounded-0 bg-dark text-white"
+        name="nombre"
+        placeholder="Nombre"
+        id="nombre"
+      />
+      </div>
+      <div class="mb-1">
+        <input
+        type="text"
+        class="form-control rounded-0 bg-dark text-white"
+        name="apellido"
+        placeholder="Apellido"
+        id="apellido"
+      />
+      </div>
+    </div>
+
+    <div>
+      <label for="descripcion">Descripción</label>
+      <textarea
+        class="form-control rounded-0 bg-dark text-white"
+        name="descripcion"
+        placeholder="Descripción"
+        id="descripcion"
+      ></textarea>
+    </div>
+
+    <button class="btn btn-primary btn-sm mt-2">Agregar</button>
+
+  </form>
+</div>

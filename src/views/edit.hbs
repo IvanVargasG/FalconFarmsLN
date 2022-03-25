@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 offset-md-3">
+      <div class="card card body bg-dark p-4 text-white">
+        <h1>Actualizar asistencia</h1>
+        <form action="/asistencia/{{asistencia._id}}/edit" method="POST">
+          <div>
+            <div class="mb-2">
+              <input
+                type="text"
+                class="form-control rounded-0 bg-dark text-white"
+                name="codigo"
+                placeholder="Codigo"
+                id="codigo"
+                value="{{asistencia.codigo}} "
+              />
+            </div>
+            <div class="mb-2">
+              <input
+                type="text"
+                class="form-control rounded-0 bg-dark text-white"
+                name="cedula"
+                placeholder="Cédula"
+                id="cedula"
+                value="{{asistencia.cedula}}"
+              />
+            </div>
+            <div class="mb-2">
+              <input
+                type="text"
+                class="form-control rounded-0 bg-dark text-white"
+                name="nombre"
+                placeholder="Nombre"
+                id="nombre"
+                value="{{asistencia.nombre}}"
+              />
+            </div>
+            <div class="mb-2">
+              <input
+                type="text"
+                class="form-control rounded-0 bg-dark text-white"
+                name="apellido"
+                placeholder="Apellido"
+                id="apellido"
+                value="{{asistencia.apellido}}"
+              />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="descripcion">Descripción</label>
+            <textarea
+              class="form-control rounded-0 bg-dark text-white"
+              name="descripcion"
+              placeholder="Descripción"
+              id="descripcion"
+            >{{asistencia.descripcion}}</textarea>
+          </div>
+
+          <button class="btn btn-primary">Editar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
